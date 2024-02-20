@@ -28,7 +28,7 @@ Apex CRM is a comprehensive Customer Relationship Management (CRM) application b
 1. **Clone the Repository**
 
     ```
-    git clone git@github.com:your-repo/apex-crm.git
+    git clone https://github.com/Peter-Vulpes/CRM_basic.git
     ```
 
 2. **Install Dependencies**
