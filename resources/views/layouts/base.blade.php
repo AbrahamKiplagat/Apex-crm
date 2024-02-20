@@ -832,6 +832,11 @@
 
 <body>
 
+    {{-- /**
+    * Render the content section.
+    *
+    * @yield('content')
+    */ --}}
     @yield('content')
 
     <footer>
