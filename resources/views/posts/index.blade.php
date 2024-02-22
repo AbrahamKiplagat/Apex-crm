@@ -1,5 +1,5 @@
 <!-- resources/views/posts/index.blade.php -->
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
     <h1>All Posts</h1>

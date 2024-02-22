@@ -1,5 +1,5 @@
 <!-- resources/views/organizations/show.blade.php -->
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
     <h2>{{ $organization->name }}</h2>

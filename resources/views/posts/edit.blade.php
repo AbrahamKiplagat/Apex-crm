@@ -1,5 +1,5 @@
 <!-- resources/views/posts/edit.blade.php -->
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
     <h1>Edit Post</h1>

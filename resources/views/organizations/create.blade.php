@@ -1,5 +1,5 @@
 <!-- resources/views/organizations/create.blade.php -->
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
     <div class="container mt-5">
