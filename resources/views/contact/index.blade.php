@@ -31,24 +31,47 @@
                         </td>
                     </tr>
                 @else
-                    @foreach ($contacts as $contact)
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <td class="px-6 py-4">
-                                {{--  display contact first_name from the fillables --}}
-                                {{ $contact->first_name }} {{ $contact->last_name }}
-                            </td>
-                            <td class="px-6 py-4">
-                                {{ $contact->email }}
-                            </td>
-                            <td class="px-6 py-4">
-                                {{ $contact->phone }}
-                            </td>
-                            <td class="px-6 py-4">
-                                {{-- contact organization --}}
-                                {{ $contact->organization->name }}
-                            </td>
-                        </tr>
-                    @endforeach
+
+@foreach ($contacts as $contact)
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <td class="px-6 py-4">
+        {{-- Display contact name --}}
+        {{ $contact->first_name }} {{ $contact->last_name }}
+    </td>
+    <td class="px-6 py-4">
+        {{ $contact->email }}
+    </td>
+    <td class="px-6 py-4">
+        {{ $contact->phone }}
+    </td>
+    <td class="px-6 py-4">
+        {{-- Display contact organization --}}
+        {{ $contact->organization->name }}
+    </td>
+    <td class="px-6 py-4">
+        {{-- Edit button --}}
+ <!-- Edit button -->
+<a href="{{ route('contact.edit', $contact->id) }}" class="btn btn-primary">Edit</a>
+
+<!-- Update button (part of the edit form) -->
+<form action="{{ route('contact.update', $contact->id) }}" method="POST" class="d-inline">
+    @csrf
+    @method('PUT')
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
+
+<!-- Delete button -->
+<form action="{{ route('contact.destroy', $contact->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this contact?')" class="d-inline">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+
+
+    </td>
+</tr>
+@endforeach
                 @endif
             </tbody>
         </table>

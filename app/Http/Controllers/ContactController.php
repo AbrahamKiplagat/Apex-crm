@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Organization;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -16,7 +17,7 @@ class ContactController extends Controller
         $contacts = Contact::all();
         //dd($contacts);
         //var_dump($contacts);
-        return view('contact.index', ['contacts' => $contacts]); 
+        return view('contact.index', ['contacts' => $contacts]);
     }
 
     /**
@@ -69,7 +70,7 @@ class ContactController extends Controller
         $contact = Contact::find($contact);
         //use find or fail
         $contact = Contact::findOrFail($contact);
-        //the difference between find and find or fail is that find or 
+        //the difference between find and find or fail is that find or
         //fail will throw an error if the contact is not found
         return view('contact.show', ['contact' => $contact]);
 
@@ -86,11 +87,18 @@ class ContactController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(contact $contact)
-    {
-        //edit one contact
-        $contact = Contact::find($contact);
-        return view('contact.edit', ['contact' => $contact]);
-    }
+{
+    // Fetch organizations
+    $org = Organization::all();
+
+    // Fetch the specific contact
+    $contact = Contact::where('id', $contact->id)->first();
+
+    // Pass both $org and $contact to the view
+    return view('contact.edit', ['org' => $org, 'contact' => $contact]);
+}
+
+
 
     /**
      * Update the specified resource in storage.
@@ -113,9 +121,16 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(contact $contact)
+    // public function destroy(contact $contact)
+    // {
+    //     //delete the contact
+    //     $contact->delete();
+    // }
+    public function destroy(Contact $contact)
     {
-        //delete the contact
         $contact->delete();
+
+        return redirect()->route('contact.index')->with('success', 'Contact deleted successfully.');
     }
+
 }
