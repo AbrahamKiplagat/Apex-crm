@@ -137,4 +137,7 @@ The Apex CRM application is open-source software licensed under the MIT License.
 <img width="960" alt="crm2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/9ee128e6-bb66-4e09-9d47-09126df26389">
 <img width="960" alt="crm1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/87e2f6ca-a1e7-41f6-abe0-8111a99f60d4">
 <img width="960" alt="crm3" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/385a5ccd-0d31-43c7-8182-94a81b5b8313">
+<img width="960" alt="crm-f1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b8f3440e-3243-475e-abe2-75ee3b5f1214">
+<img width="960" alt="crm-f" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/c6dcf3f9-ca91-41b7-b2ef-df15d726c72d">
+<img width="960" alt="crm-f2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b53b191d-94c3-44cd-adc4-079e3fba46b3">
 
