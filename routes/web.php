@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DealController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TasksController;
 use App\Http\Controllers\ContactController;
@@ -14,6 +15,10 @@ use App\Http\Controllers\ContactController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('deals', DealController::class);
+use App\Http\Controllers\InvoiceController;
+
+Route::resource('invoices', InvoiceController::class);
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,7 +31,9 @@ use App\Http\Controllers\OrganizationController;
 
 Route::resource('organizations', OrganizationController::class);
 Route::get('/contact', [ContactController::class, 'index'])->middleware(['auth', 'verified'])->name('contact');
-Route::get('/organizations', [OrganizationController::class, 'index'])->middleware(['auth', 'verified'])->name('organizations.index');
+Route::get('/organizations', [OrganizationController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('organizations');
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 
