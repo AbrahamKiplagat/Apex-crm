@@ -2,36 +2,37 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\OrganizationResource\Pages;
-use App\Filament\Resources\OrganizationResource\RelationManagers;
-use App\Models\Organization;
+use App\Filament\Resources\TasksResource\Pages;
+use App\Filament\Resources\TasksResource\RelationManagers;
+use App\Models\Tasks;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class OrganizationResource extends Resource
+class TasksResource extends Resource
 {
-    protected static ?string $model = Organization::class;
+    protected static ?string $model = Tasks::class;
 
-    protected static ?string $navigationIcon = 'codicon-organization';
+    protected static ?string $navigationIcon = 'fas-tasks';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
+                Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('industry')
+                Forms\Components\Textarea::make('description')
                     ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('orgsize')
-                    ->required()
-                    ->maxLength(255),
+                    ->maxLength(65535)
+                    ->columnSpanFull(),
+                Forms\Components\Toggle::make('completed')
+                    ->required(),
             ]);
     }
 
@@ -39,12 +40,11 @@ class OrganizationResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('industry')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('orgsize')
-                    ->searchable(),
+                TextColumn::make('description'),
+                Tables\Columns\IconColumn::make('completed')
+                    ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -77,9 +77,9 @@ class OrganizationResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListOrganizations::route('/'),
-            'create' => Pages\CreateOrganization::route('/create'),
-            'edit' => Pages\EditOrganization::route('/{record}/edit'),
+            'index' => Pages\ListTasks::route('/'),
+            'create' => Pages\CreateTasks::route('/create'),
+            'edit' => Pages\EditTasks::route('/{record}/edit'),
         ];
     }
 }
