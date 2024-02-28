@@ -17,8 +17,8 @@ class ActivityResource extends Resource
 {
     protected static ?string $model = Activity::class;
 
-    protected static ?string $navigationIcon = 'fluentui-broad-activity-feed-20-o';
-
+    protected static ?string $navigationIcon = 'fluentui-broad-activity-feed-16-o';
+    protected static ?string $navigationGroup = 'Activity & Tasks';
     public static function form(Form $form): Form
     {
         return $form

@@ -19,7 +19,7 @@ class TasksResource extends Resource
     protected static ?string $model = Tasks::class;
 
     protected static ?string $navigationIcon = 'fas-tasks';
-
+    protected static ?string $navigationGroup = 'Activity & Tasks';
     public static function form(Form $form): Form
     {
         return $form

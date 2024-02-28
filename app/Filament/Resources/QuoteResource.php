@@ -18,7 +18,7 @@ class QuoteResource extends Resource
     protected static ?string $model = Quote::class;
 
     protected static ?string $navigationIcon = 'go-quote-16';
-
+    protected static ?string $navigationGroup = 'Customer Management';
     public static function form(Form $form): Form
     {
         return $form

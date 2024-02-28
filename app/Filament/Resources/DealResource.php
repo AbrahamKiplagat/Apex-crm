@@ -18,7 +18,7 @@ class DealResource extends Resource
     protected static ?string $model = Deal::class;
 
     protected static ?string $navigationIcon = 'si-deepgram';
-
+    protected static ?string $navigationGroup = 'Customer Management';
     public static function form(Form $form): Form
     {
         $stages = [

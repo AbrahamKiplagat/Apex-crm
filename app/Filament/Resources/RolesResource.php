@@ -2,23 +2,25 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\LeedResource\Pages;
-use App\Filament\Resources\LeedResource\RelationManagers;
-use App\Models\Leed;
+use App\Filament\Resources\RolesResource\Pages;
+use App\Filament\Resources\RolesResource\RelationManagers;
+use App\Models\Roles;
 use Filament\Forms;
+use Spatie\Permission\Models\Role;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class LeedResource extends Resource
+class RolesResource extends Resource
 {
-    protected static ?string $model = Leed::class;
+    protected static ?string $model = Role::class;
 
-    protected static ?string $navigationIcon = 'iconoir-leaderboard-star';
-    protected static ?string $navigationGroup = 'Customer Management';
+    protected static ?string $navigationIcon = 'eos-role-binding-o';
+    protected static ?string $navigationGroup = 'Settings';
     public static function form(Form $form): Form
     {
         return $form
@@ -31,10 +33,11 @@ class LeedResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')->label("id"),
-                Tables\Columns\TextColumn::make('user_id')->label("user_id"),
-                Tables\Columns\TextColumn::make('description')->label("description"),
-                Tables\Columns\TextColumn::make('published_at')->label("published_at"),
+                TextColumn::make('id')->sortable()->label('id'),
+                TextColumn::make('name')->sortable()->searchable()->label('name'),
+                TextColumn::make('guard_name')->sortable()->searchable()->label('guard_name'),
+                TextColumn::make('created_at')->dateTime("D-M-Y")->sortable()->searchable()->label('created_at'),
+
             ])
             ->filters([
                 //
@@ -59,9 +62,9 @@ class LeedResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListLeeds::route('/'),
-            'create' => Pages\CreateLeed::route('/create'),
-            'edit' => Pages\EditLeed::route('/{record}/edit'),
+            'index' => Pages\ListRoles::route('/'),
+            'create' => Pages\CreateRoles::route('/create'),
+            'edit' => Pages\EditRoles::route('/{record}/edit'),
         ];
     }
 }
