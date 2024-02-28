@@ -1,7 +1,8 @@
 name: laravel-tests
 
-on: pull_request:
-branches:
+on:
+  pull_request:
+    branches:
       - main
 
 jobs:
