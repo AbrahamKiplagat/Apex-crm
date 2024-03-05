@@ -137,7 +137,16 @@ The Apex CRM application is open-source software licensed under the MIT License.
 <img width="960" alt="crm2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/9ee128e6-bb66-4e09-9d47-09126df26389">
 <img width="960" alt="crm1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/87e2f6ca-a1e7-41f6-abe0-8111a99f60d4">
 <img width="960" alt="crm3" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/385a5ccd-0d31-43c7-8182-94a81b5b8313">
-<img width="960" alt="crm-f1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b8f3440e-3243-475e-abe2-75ee3b5f1214">
-<img width="960" alt="crm-f" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/c6dcf3f9-ca91-41b7-b2ef-df15d726c72d">
-<img width="960" alt="crm-f2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b53b191d-94c3-44cd-adc4-079e3fba46b3">
+<img width="960" alt="apex10" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/a914bfee-290e-4124-88be-ccd9949fb8ea">
+<img width="960" alt="apex9" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/0a4b3d5e-8b8e-4bcf-b707-8d6fccedb3dc">
+<img width="960" alt="apex8" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/9540d2ce-0b6e-4c54-a21c-d59fac0a7c8a">
+<img width="960" alt="apex7" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b87cde89-c8b9-4085-b9ec-c1e6482fe33c">
+<img width="960" alt="apex6" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/6239c61f-fc0c-4ea2-a887-49e647fff96d">
+<img width="960" alt="apex5" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/29157c9e-a8f0-46c4-befa-e1eb1a9049cb">
+<img width="960" alt="apex4" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/d1b839eb-e615-4ffb-a271-f2d2511dd6da">
+<img width="960" alt="apex3" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/35b996f1-3df6-4817-a8cb-c94341e6a73e">
+<img width="960" alt="apex2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/cf20f91a-1cee-466b-ac03-d322905bd5ff">
+<img width="960" alt="Apex1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/c3735102-4581-4b2b-9071-23f221161fd5">
+<img width="960" alt="Apex" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/e3c29ed7-eb69-4a6a-8e42-d8df58e54fda">
+
 
