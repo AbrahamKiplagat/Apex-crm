@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\RolesResource\Pages;
 use App\Filament\Resources\RolesResource\RelationManagers;
+use App\Filament\Resources\RolesResource\RelationManagers\PermissionsRelationManager;
 use App\Models\Roles;
 use Filament\Forms;
 use Spatie\Permission\Models\Role;
@@ -25,7 +26,16 @@ class RolesResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('name')
+                ->label('Name')
+                ->required(),
+
+            Forms\Components\Textarea::make('description')
+                ->label('Description'),
+
+            Forms\Components\Checkbox::make('completed')
+                ->label('Completed'),
+
             ]);
     }
 
@@ -56,7 +66,9 @@ class RolesResource extends Resource
     {
         return [
             //
+            PermissionsRelationManager::class
         ];
+
     }
 
     public static function getPages(): array

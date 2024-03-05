@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\OrganizationResource\Pages;
 use App\Filament\Resources\OrganizationResource\RelationManagers;
+use App\Filament\Resources\OrganizationResource\Widgets\OrganizationChartWidget;
 use App\Models\Organization;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -57,6 +58,7 @@ class OrganizationResource extends Resource
             ->filters([
                 //
             ])
+            // ->query(fn (Builder $query) => $query->limit(4))
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
@@ -65,6 +67,12 @@ class OrganizationResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
+    }
+    public static function getWidgets(): array
+    {
+        return [
+            OrganizationChartWidget::class,
+        ];
     }
 
     public static function getRelations(): array
