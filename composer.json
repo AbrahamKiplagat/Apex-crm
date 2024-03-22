@@ -15,8 +15,9 @@
         "blade-ui-kit/blade-heroicons": "^2.3",
         "codeat3/blade-codicons": "^1.32",
         "codeat3/blade-eos-icons": "^1.13",
-        "codeat3/blade-fluentui-system-icons": "^1.32",
+        "codeat3/blade-fluentui-system-icons": "^1.33",
         "codeat3/blade-google-material-design-icons": "^1.18",
+        "codeat3/blade-radix-icons": "^1.7",
         "codeat3/blade-simple-icons": "^3.6",
         "doctrine/dbal": "*",
         "filament/filament": "^3.2",
@@ -25,9 +26,10 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+        "mbezhanov/faker-provider-collection": "^2.0",
         "owenvoke/blade-fontawesome": "^2.5",
         "ryangjchandler/blade-tabler-icons": "^2.2",
-        "spatie/laravel-permission": "^6.3"
+        "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
