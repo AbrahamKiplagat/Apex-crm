@@ -76,6 +76,8 @@ With this new CRM solution, we aim to:
 - Risk: Lack of user adoption
 - Mitigation: Conduct comprehensive training sessions for users, provide ongoing support, and solicit feedback for continuous improvement.
 
+## System design
+<img width="539" alt="crm-chart" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/ce8327fc-92d5-47a1-a1e7-5a41b3bb7fbf">
 
 
 ## Technologies:
