@@ -2,7 +2,9 @@
 
 ## Overview
 
-Apex CRM is a comprehensive Customer Relationship Management (CRM) application built with Laravel. It provides a suite of tools for managing customer interactions, tracking leads, and monitoring sales. The application is designed to streamline business operations and improve customer relationships.
+Apex CRM is a comprehensive Customer Relationship Management (CRM) application built with Laravel.
+It provides a suite of tools for managing customer interactions, tracking leads, and monitoring sales. 
+The application is designed to streamline business operations and improve customer relationships.
 
 ## Features
 
@@ -41,7 +43,8 @@ Project Supervisor:_____________
 - The objective is to enable Apex Sales in effectively managing their sales pipeline encompassing accounts, contacts, deals, and activities.
 -  The system requirements encompass multifaceted functionalities such as user and role management, organization and account tracking, deal management with stage tracking, activity recording, team organization, comprehensive reporting, and quotes and invoices generation.
 - Key deliverables include requirements and design documentation, database schema, core CRUD functionalities, role-based access control, reporting dashboard, quotes and invoices workflow, and a testing suite achieving 80% coverage.
--  The project breakdown outlines modules such as Deals, Organizations/Accounts, Users, Contacts, Quotes and Invoices, Activities, and Reports, each delineating specific functionalities and database structures. The project aims to deliver a functional CRM solution empowering Apex Sales to assert control over their sales pipeline, with evaluation based on feature completeness, code quality, documentation, and product demonstration.
+-  The project breakdown outlines modules such as Deals, Organizations/Accounts, Users, Contacts, Quotes and Invoices, Activities, and Reports, each delineating specific functionalities and database structures.
+-   The project aims to deliver a functional CRM solution empowering Apex Sales to assert control over their sales pipeline, with evaluation based on feature completeness, code quality, documentation, and product demonstration.
 
 
 
@@ -56,8 +59,10 @@ Project Supervisor:_____________
 ## INTRODUCTION.
 - This proposal delves into my journey of mastering frontend and backend frameworks, highlighting their practical application through coding lessons and hands-on projects. It also sheds light on the imminent collaboration with Apex Sales, where Laravel, a powerful PHP framework, will play a pivotal role in developing a custom CRM solution.
 - At its core, the project aims to leverage Laravel's robust features to create a tailored CRM solution for Apex Sales, a growing B2B sales organization.
--  This solution will enable Apex Sales to effectively track their sales pipeline across accounts, contacts, deals, and activities. By harnessing Laravel's flexibility and scalability, we aim to deliver a solution that meets the unique requirements of Apex Sales while ensuring seamless integration and smooth functionality.
-- Additionally, the collaboration with Apex Sales presents an exciting opportunity to apply Laravel's advanced capabilities in role-based access control, reporting dashboards, quotes and invoices workflows, and more. This partnership underscores the versatility and reliability of Laravel in building sophisticated web applications tailored to specific business needs.
+-  This solution will enable Apex Sales to effectively track their sales pipeline across accounts, contacts, deals, and activities.
+-   By harnessing Laravel's flexibility and scalability, we aim to deliver a solution that meets the unique requirements of Apex Sales while ensuring seamless integration and smooth functionality.
+- Additionally, the collaboration with Apex Sales presents an exciting opportunity to apply Laravel's advanced capabilities in role-based access control, reporting dashboards, quotes and invoices workflows, and more.
+- This partnership underscores the versatility and reliability of Laravel in building sophisticated web applications tailored to specific business needs.
 - Through this collaboration, we aspire to not only deliver a high-quality CRM solution for Apex Sales but also showcase the capabilities of Laravel in driving business growth and efficiency.
 Objective:
 - At Apex Sales, we're on a mission to elevate our sales game and foster stronger client connections.
