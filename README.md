@@ -77,7 +77,7 @@ With this new CRM solution, we aim to:
 - Mitigation: Conduct comprehensive training sessions for users, provide ongoing support, and solicit feedback for continuous improvement.
 
 ## System design
-<img width="539" alt="crm-chart" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/ce8327fc-92d5-47a1-a1e7-5a41b3bb7fbf">
+<img width="525" alt="crm-chart" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/56090501-558c-4cb2-90c4-add53a960c96">
 
 
 ## Technologies:
