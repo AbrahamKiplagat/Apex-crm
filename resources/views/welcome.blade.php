@@ -63,7 +63,7 @@
     </div>
 
 
-    <div class="mt-4">
+    <div class="container-fluid mt-4">
         <h2>Welcome to Apex CRM - Where Efficiency Meets Growth</h2>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -100,7 +100,7 @@
             Join Apex CRM today and experience the difference in how you manage and grow your business.
         </p>
     </div>
-</div>
+
 
 </body>
 </html>
