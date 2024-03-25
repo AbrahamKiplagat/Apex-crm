@@ -14,139 +14,96 @@ Apex CRM is a comprehensive Customer Relationship Management (CRM) application b
 -   Activity Tracking: Monitor user activities and tasks.
 -   Deal Management: Track the sales process from lead to close.
 
-## Installation
 
-### Prerequisites
+## PROJECT TITLE: APEX CRM. 
+COURSE: DIPLOMA IN SOFTWARE DEVELOPEMENT.
+NAME: ABRAHAM KIPLAGAT KURERE.
+STUDENT NUMBER: 230282.
+START DATE: 1/02/2024.
+FINISH DATE: 25/3/2024.
+SUPERVISOR: TR Edward.
 
--   PHP 8 or higher
--   Laravel 10.x or higher
--   Composer
--   MySQL or PostgreSQL database
+## Declaration.
+This is my original work and has not been presented in any institution for any certification in any institution for any certification. I assert the information given and conclusions drawn are an outcome of my work.
+Name: ……………………
+Signature:…………………
 
-### Steps
+This project proposal has been submitted with my/our approval as Institute Supervisor:
 
-1. **Clone the Repository**
 
-    ```
-    git clone https://github.com/Peter-Vulpes/CRM_basic.git
-    ```
+Role	Name	Signature	Date
+_____   ____    ________    _______
+Project Supervisor:_____________			
+Project Supervisor:_____________
 
-2. **Install Dependencies**
+## Abstract:
+- The final project entails the development of a bespoke CRM solution for Apex Sales, a burgeoning B2B sales enterprise. The objective is to enable Apex Sales in effectively managing their sales pipeline encompassing accounts, contacts, deals, and activities. The system requirements encompass multifaceted functionalities such as user and role management, organization and account tracking, deal management with stage tracking, activity recording, team organization, comprehensive reporting, and quotes and invoices generation. Key deliverables include requirements and design documentation, database schema, core CRUD functionalities, role-based access control, reporting dashboard, quotes and invoices workflow, and a testing suite achieving 80% coverage. The project breakdown outlines modules such as Deals, Organizations/Accounts, Users, Contacts, Quotes and Invoices, Activities, and Reports, each delineating specific functionalities and database structures. The project aims to deliver a functional CRM solution empowering Apex Sales to assert control over their sales pipeline, with evaluation based on feature completeness, code quality, documentation, and product demonstration.
 
-    ```
-    composer install
-    ```
 
-3. **Configure Environment**
-   Rename `.env.example` to `.env` and update the database connection details:
 
-    ```
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=apex_crm
-    DB_USERNAME=root
-    DB_PASSWORD=
-    ```
+## Acknowledgement.
+- I wish to express my profound gratitude to the almighty God, whose unwavering guidance has illuminated my path throughout my coding and learning journey. My gratitude appreciation goes to my parents, friends, and learning colleagues, for their consistent support, both spiritually and financially and collaborating. Which has been instrumental in propelling me forward. Their unwavering faith in my abilities has been a source of constant motivation.
+- I particularly thank my dedicated institutional supervisor, Tr. Edward, for their invaluable mentorship and unyielding support. Their insightful guidance and constructive feedback have been pivotal in shaping my educational journey, and I am truly fortunate to have had them as a mentor.
+- In conclusion, I am humbled by the collective contributions of those who have been part of my educational voyage. Their encouragement and belief in my potential have fortified my determination to excel. As I move forward, I am inspired to pay forward the support I've received by contributing positively to the fields I am passionate about.
 
-4. **Generate Application Key**
 
-    ```
-    php artisan key:generate
-    ```
+## INTRODUCTION.
+- This proposal delves into my journey of mastering frontend and backend frameworks, highlighting their practical application through coding lessons and hands-on projects. It also sheds light on the imminent collaboration with Apex Sales, where Laravel, a powerful PHP framework, will play a pivotal role in developing a custom CRM solution.
+- At its core, the project aims to leverage Laravel's robust features to create a tailored CRM solution for Apex Sales, a growing B2B sales organization. This solution will enable Apex Sales to effectively track their sales pipeline across accounts, contacts, deals, and activities. By harnessing Laravel's flexibility and scalability, we aim to deliver a solution that meets the unique requirements of Apex Sales while ensuring seamless integration and smooth functionality.
+- Additionally, the collaboration with Apex Sales presents an exciting opportunity to apply Laravel's advanced capabilities in role-based access control, reporting dashboards, quotes and invoices workflows, and more. This partnership underscores the versatility and reliability of Laravel in building sophisticated web applications tailored to specific business needs.
+- Through this collaboration, we aspire to not only deliver a high-quality CRM solution for Apex Sales but also showcase the capabilities of Laravel in driving business growth and efficiency.
+Objective:
+- At Apex Sales, we're on a mission to elevate our sales game and foster stronger client connections. We recognize that to thrive in today's business landscape, we need more than just traditional methods. That's why we're diving into the world of customized CRM solutions.
+With this new CRM solution, we aim to:
+•	Make our sales process smoother and more efficient.
+•	Get valuable insights into how we're performing and where we can improve.
+•	Bring our sales teams closer together, so we can collaborate seamlessly.
+•	Take our customer relationships to the next level by keeping all their information in one place.
+•	Speed up our quoting and invoicing process to close deals faster and serve our clients better.
 
-5. **Run Migrations**
 
-    ```
-    php artisan migrate
-    ```
 
-6. **Seed Data (Optional)**
-   If you want to seed initial data for testing, run:
-    ```
-    php artisan db:seed
-    ```
 
-## Migrations
 
-The CRM application includes the following migrations:
 
--   Organizations Table
--   Users Table
--   Contacts Table
--   Quotes Table
--   Invoices Table
--   Quote_items Table
--   Invoice_items Table
--   Activities Table
--   Deals Table
--   Deal_stages Table
 
-Each migration corresponds to a table in the database, and they are responsible for creating the necessary schema.
+## Project Risk and Mitigations:
+- Risk: Data security breaches
+- Mitigation: Implement robust security measures, provide user training on data security best practices, regularly update and patch the CRM system, and backup data regularly. 
+- Risk: Technical challenges
+- Mitigation: Conduct thorough testing, engage experienced developers and consultants, maintain open communication channels with the development team, and allocate sufficient time and resources for issue resolution. 
 
-## Usage
+- Risk: Lack of user adoption
+- Mitigation: Conduct comprehensive training sessions for users, provide ongoing support, and solicit feedback for continuous improvement.
 
-After installation, you can access the CRM application by navigating to the root URL of your Laravel application.
 
-## Development
 
-For developers looking to contribute or extend the CRM functionality, you can use the Laravel module maker to generate CRUD modules quickly. Install it using:
+## Technologies:
+The Apex Sales CRM Project will be developed using the following technologies:
+Requirements:	Technology	Description:
+- Front-end:	HTML, CSS,Bootstrap, 	For building a responsive and interactive user interface.
+- Database:	Mysql 	For Data storage.
+- Back-end:	Laravel $ PHP	To create a scalable and RESTful API for handling data and analisis.
 
-```
-composer require nwidart/laravel-modules
-```
 
-And then generate a CRUD module with:
+## Development Plan:
+- Requirement Analysis: Gather detailed requirements from Apex Sales stakeholders to understand their needs and objectives.
+- Design Phase: Design the database schema, user interface mockups, and architectural plan for the CRM system.
+- Development: Develop the CRM solution using Laravel framework for backend development and React.js for frontend development. Implement core CRUD functionality, role-based access control, reporting dashboard, quotes and invoices workflow, and other required features.
+- Testing: Conduct comprehensive testing to ensure the functionality, security, and performance of the CRM system. This includes unit testing, integration testing, and user acceptance testing.
+- Deployment: Deploy the CRM solution to a staging environment for final testing and validation by stakeholders. Address any issues or bugs identified during this phase.
 
-```
-php artisan make:module <name of module>
-```
 
-Or
 
-use laravel filament
 
-```
-composer require filament/filament
-```
+## Conclusion:
+In conclusion, the development of the CRM solution for Apex Sales marks a milestone in leveraging technology for streamlined sales operations. By integrating Laravel with modern frontend tech, we've built a dynamic platform meeting diverse needs, including user management, organization tracking, deal management, and reporting.
+With meticulous planning and development, the CRM fulfills all requirements, ensuring data security via role-based access control and providing actionable insights through a reporting dashboard. Moving forward, we're committed to supporting Apex Sales with updates, maintenance, and technical support.
+Our goal is seamless CRM integration into existing workflows, driving productivity and collaboration. We thank the Apex Sales team for their collaboration, laying the groundwork for a transformative solution. Together, we aim to propel Apex Sales towards sustained success in the competitive market.
+For any inquiries or further information, I remain at your disposal, eager to contribute to the realization of a more sustainable and informed future.
+Abraham Kiplagat Kurere 
+Kurerelagat01@gmail.com
+Full Stack Web Developer
 
-Then
-
-```
-php artisan filament:install --panels
-```
-
-## Testing
-
-To run the test suite, execute:
-
-```
-composer test
-```
-
-## Security
-
-If you discover any security-related issues, please email the maintainer instead of using the issue tracker.
-
-## License
-
-The Apex CRM application is open-source software licensed under the MIT License. Please see the [License File](LICENSE.md) for more information.
-## Project Screenshots:
-<img width="960" alt="crm4" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/86f0f0fe-6b21-4dfa-9eb4-2727c56df85c">
-<img width="960" alt="crm" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/07656ad2-b122-4dc7-b8e2-460da05a2a7d">
-<img width="960" alt="crm2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/9ee128e6-bb66-4e09-9d47-09126df26389">
-<img width="960" alt="crm1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/87e2f6ca-a1e7-41f6-abe0-8111a99f60d4">
-<img width="960" alt="crm3" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/385a5ccd-0d31-43c7-8182-94a81b5b8313">
-<img width="960" alt="apex10" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/a914bfee-290e-4124-88be-ccd9949fb8ea">
-<img width="960" alt="apex9" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/0a4b3d5e-8b8e-4bcf-b707-8d6fccedb3dc">
-<img width="960" alt="apex8" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/9540d2ce-0b6e-4c54-a21c-d59fac0a7c8a">
-<img width="960" alt="apex7" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/b87cde89-c8b9-4085-b9ec-c1e6482fe33c">
-<img width="960" alt="apex6" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/6239c61f-fc0c-4ea2-a887-49e647fff96d">
-<img width="960" alt="apex5" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/29157c9e-a8f0-46c4-befa-e1eb1a9049cb">
-<img width="960" alt="apex4" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/d1b839eb-e615-4ffb-a271-f2d2511dd6da">
-<img width="960" alt="apex3" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/35b996f1-3df6-4817-a8cb-c94341e6a73e">
-<img width="960" alt="apex2" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/cf20f91a-1cee-466b-ac03-d322905bd5ff">
-<img width="960" alt="Apex1" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/c3735102-4581-4b2b-9071-23f221161fd5">
-<img width="960" alt="Apex" src="https://github.com/AbrahamKiplagat/crm-assignment2/assets/110113737/e3c29ed7-eb69-4a6a-8e42-d8df58e54fda">
 
 
